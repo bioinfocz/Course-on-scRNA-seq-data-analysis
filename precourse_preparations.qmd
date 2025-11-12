@@ -5,13 +5,13 @@ title: "Precourse preparations"
 
 ## Required competences
 
-Participants should already have a basic knowledge in Next Generation Sequencing (NGS) techniques, or have already followed the course [NGS - Quality control, Alignment, Visualisation](https://sib-swiss.github.io/NGS-introduction-training/). Knowledge in RNA sequencing is a plus. A basic knowledge of the R statistical software is required. Test your R skills with the quiz [here](https://docs.google.com/forms/d/e/1FAIpQLSdIyeuabd_ZOWXgI1MWHapmaOMu20L9ESkLDZiWnpmkpujyOg/viewform?usp=sf_link), before registering. If you are not familiar with NGS techniques, we highly recommend reviewing the NGS introduction training materials to ensure a smoother learning experience in this course.
+Participants should already have a basic knowledge in Next Generation Sequencing (NGS) techniques. Knowledge in RNA sequencing is a plus. A basic knowledge of the R statistical software is **required**. Test your R skills with the quiz [here](https://docs.google.com/forms/d/e/1FAIpQLSdIyeuabd_ZOWXgI1MWHapmaOMu20L9ESkLDZiWnpmkpujyOg/viewform?usp=sf_link), before registering.
 
 ## Software
 
-Attendees should have a Wi-Fi enabled computer. An **online R and RStudio environment** will be provided. In order to access that environment your computer needs to be able to access http websites (not https). You can check this by browsing to [http://www.httpforever.com](http://www.httpforever.com). However, in case you wish to perform the practical exercises on your own computer, please take a moment to install the following before the course:
+Attendees should have their own computer with at least 4 GB of RAM and with enabled internet access. Any modern operating system is fine. WiFi (eduroam) and wired connection will be provided at place. Wired connection is preferred to mitigate WiFi limitations, so please bring your ethernet dongles/adapters if possible.  An **online R and RStudio environment** will be provided. However, in case you wish to perform the practical exercises on your own computer, please take a moment to install the following before the course:
 
-- [R](https://cran.r-project.org/) version > 4.0. 
+- [R](https://cran.r-project.org/) version > 4.2. 
 - Latest RStudio version, the [free version](https://rstudio.com/products/rstudio/download/) is perfectly fine.
 - The R packages necessary for the course. Find the script to install them [here](https://github.com/sib-swiss/single-cell-training/blob/master/Docker/install_packages.R). 
 

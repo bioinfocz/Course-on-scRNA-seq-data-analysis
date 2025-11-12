@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
   execute-dir: project
   render:
     - "*.qmd"
@@ -59,10 +60,10 @@ website:
 
     right:
       - icon: github
-        href: https://github.com/sib-swiss/single-cell-r-training/
+        href: https://github.com/bioinfocz/Course-on-scRNA-seq-data-analysis
         aria-label: GitHub
   sidebar:
-    logo: assets/imglogo-basic-color-nobg-cmyk.svg
+    logo: assets/logo_stranky.svg
 
 format:
   html:
