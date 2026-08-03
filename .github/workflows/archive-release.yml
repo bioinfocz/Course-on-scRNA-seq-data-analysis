@@ -1,0 +1,37 @@
+name: Archive released version
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag to archive (e.g. v1.0.0-alpha)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    container:
+      image: sibswiss/training-singlecell-rstudio:latest
+    steps:
+      - name: Checkout tagged version
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.inputs.tag_name || github.event.release.tag_name }}
+
+      - name: Build site
+        run: |
+          quarto render
+
+      - name: Deploy archived version into its own subfolder
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./_site
+          destination_dir: archive/${{ github.event.inputs.tag_name || github.event.release.tag_name }}
+          keep_files: true

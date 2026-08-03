@@ -9,13 +9,9 @@ site
 .Rprofile
 single_cell_course
 cellranger*
-course_data*
-*.rds
-
 # _freeze/
 .quarto/
 /.quarto/
-
 /.luarc.json
 ~$*
 .sh_history
