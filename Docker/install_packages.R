@@ -70,3 +70,5 @@ devtools::install_github("cole-trapnell-lab/monocle3")
 remotes::install_github("immunogenomics/presto")
 # STACAS for integration:
 remotes::install_github("carmonalab/STACAS")
+# msidgbdf for molecular signatures
+install.packages("msigdbrdata", repos = "https://igordot.r-universe.dev")
