@@ -10,7 +10,7 @@ on:
         - ' _freeze/**'
       branches:
         - master
-        - deepak
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: write
@@ -21,7 +21,7 @@ jobs:
   publish-site:
     runs-on: ubuntu-latest
     container:
-      image: sibswiss/training-singlecell-rstudio:latest
+      image: pfeiferl/training-singlecell-rstudio:latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6

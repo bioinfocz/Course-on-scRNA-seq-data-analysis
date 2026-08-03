@@ -24,3 +24,4 @@ COPY renv.lock ./
 
 RUN Rscript -e 'install.packages("renv")'
 RUN Rscript -e 'renv::restore()'
+RUN Rscript -e 'install.packages("msigdbrdata", repos = "https://igordot.r-universe.dev")'

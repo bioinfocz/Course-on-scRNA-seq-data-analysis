@@ -8,6 +8,8 @@ site
 .Rhistory
 .Rprofile
 single_cell_course
+*.rds
+*.RData
 cellranger*
 # _freeze/
 .quarto/
@@ -17,5 +19,5 @@ cellranger*
 .sh_history
 .wget-hsts
 de_genes_FindAllMarkers.csv
-
-
+**/*_cache/
+**/*_cache

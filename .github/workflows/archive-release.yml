@@ -16,7 +16,7 @@ jobs:
   archive:
     runs-on: ubuntu-latest
     container:
-      image: sibswiss/training-singlecell-rstudio:latest
+      image: pfeiferl/training-singlecell-rstudio:latest
     steps:
       - name: Checkout tagged version
         uses: actions/checkout@v6
