@@ -24,10 +24,12 @@ title: "Course schedule"
 | block   	| start    	| end      	| subject                             	| lecturer                        |
 |---------	|----------	|----------	|-------------------------------------	|--------------------------------	|
 | block 1 	| 9:15 AM  	| 10:30 AM  	| [Normalization and scaling](day2/day2-1_normalization_scaling.qmd)  |  Lucie Pfeiferova |
+|  	|   	|   	| [Dimensionality reduction](day2/day2-2_dimensionality_reduction.qmd)  |  Lucie Pfeiferova |
+
 |         	| 10:30 AM 	| 11:00 AM 	| BREAK                               	| |
-| block 2 	| 11:00 AM 	| 12:30 PM 	| [Dimensionality reduction](day2/day2-2_dimensionality_reduction.qmd) and [Integration](day2/day2-3_integration.qmd)  | Lucie Pfeiferova and Yusuf Caglar Odabasi  |
+| block 2 	| 11:00 AM 	| 12:30 PM 	| [Integration](day2/day2-3_integration.qmd)  | Vojtech Melichar  |
 |         	| 12:30 PM 	| 1:30 PM  	| BREAK                               	| |
-| block 3 	| 1:30 PM  	| 3:00 PM  	| [Clustering](day2/day2-4_clustering.qmd)     	|  Yusuf Caglar Odabasi |
+| block 3 	| 1:30 PM  	| 3:00 PM  	| [Clustering](day2/day2-4_clustering.qmd)     	| Vojtech Melichar |
 |         	| 3:00 PM  	| 3:30 PM  	| BREAK                               	| |
 | block 4 	| 3:30 PM  	| 5:00 PM  	| group work 	| |
 
@@ -37,9 +39,17 @@ title: "Course schedule"
 |---------	|----------	|----------	|-------------------------------------	|--------------------------------	|
 | block 1 	| 9:15 AM  	| 10:30 AM 	| [Cell annotation](day3/day3-1_cell_annotation.qmd) 	| Lucie Pfeiferova |
 |         	| 10:30 AM 	| 11:00 AM 	| BREAK                               	| |
-| block 2 	| 11:00 AM 	| 12:30 PM 	| [Differential gene expression](day3/day3-2_differential_gene_expression.qmd) and [Enrichment analysis](day3/day3-3_enrichment_analysis.qmd)            	| Jan Kubovciak |
+| block 2 	| 11:00 AM 	| 12:30 PM 	| [Differential gene expression](day3/day3-2_differential_gene_expression.qmd)            	| Jan Kubovciak |
+|  	|  	|  	| [Enrichment analysis](day3/day3-3_enrichment_analysis.qmd)            	| Jan Kubovciak |
 |         	| 12:30 PM 	| 1:30 PM  	| BREAK                               	| |
 | block 3 	| 1:30 PM  	| 3:00 PM  	| group work | |
 |         	| 3:00 PM  	| 3:30 PM  	| BREAK                         |       	|
 | block 4 	| 3:30 PM  	| 5:00 PM  	| group work 	+ presentations | |
-| post-course 	| 5:00 PM  	| 5:10 PM  	| [Post-course information](assets/pdf/11_post_course.pdf) 	| Michal Kolar |
+
+## Day 4
+| block   	| start    	| end      	| subject                             	| lecturer                        |
+|---------	|----------	|----------	|-------------------------------------	|--------------------------------	|
+| block 1 	| 9:15 AM  	| 10:30 AM 	| group work + presentations 	|  |
+
+| post-course 	| 10:30 AM  	| 10:45 AM  	| [Post-course information](assets/pdf/11_post_course.pdf) 	| all |
+

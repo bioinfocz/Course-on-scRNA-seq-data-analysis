@@ -16,15 +16,16 @@ Are you looking for material of original SIB versions of the course? Find it at 
 
 ## Teachers
 
-- Michal Kolar [ORCiD](https://orcid.org/0000-0002-4593-1525)
+
 - Lucie Pfeiferova [ORCiD](https://orcid.org/0000-0003-1089-0329)
 - Jan Kubovciak [ORCiD](https://orcid.org/0000-0001-6446-9797)
-- Yusuf Caglar Odabasi[ORCiD](https://orcid.org/0000-0003-0690-5575)
+- Vojtech Melichar [ORCiD](https://orcid.org/0009-0000-7278-923X)
 
 ## Course support team
-- Vojtech Melichar [ORCiD](https://orcid.org/0009-0000-7278-923X)
-- Mathys Delattre
-- Eva Rohlova
+- Michal Kolar [ORCiD](https://orcid.org/0000-0002-4593-1525)
+- Diana Pilvar [ORCiD](https://orcid.org/0000-0002-5788-2687)
+- Priit Adler
+- Marilin Moor [ORCiD](https://orcid.org/0009-0006-1964-5388)
 
 ### Great thanks to
 - Geert van Geest [ORCiD](https://orcid.org/0000-0002-1561-078X)
