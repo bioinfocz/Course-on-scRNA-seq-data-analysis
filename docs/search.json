@@ -88,14 +88,14 @@
     "href": "index.html#teachers",
     "title": "SIB course Single Cell Transcriptomics",
     "section": "Teachers",
-    "text": "Teachers\n\nMichal Kolar ORCiD\nLucie Pfeiferova ORCiD\nJan Kubovciak ORCiD\nYusuf Caglar OdabasiORCiD"
+    "text": "Teachers\n\nLucie Pfeiferova ORCiD\nJan Kubovciak ORCiD\nVojtech Melichar ORCiD"
   },
   {
     "objectID": "index.html#course-support-team",
     "href": "index.html#course-support-team",
     "title": "SIB course Single Cell Transcriptomics",
     "section": "Course support team",
-    "text": "Course support team\n\nVojtech Melichar ORCiD\nMathys Delattre\nEva Rohlova\n\n\nGreat thanks to\n\nGeert van Geest ORCiD\nPatricia Palagi ORCiD"
+    "text": "Course support team\n\nMichal Kolar ORCiD\nDiana Pilvar ORCiD\nPriit Adler\nMarilin Moor ORCiD\n\n\nGreat thanks to\n\nGeert van Geest ORCiD\nPatricia Palagi ORCiD"
   },
   {
     "objectID": "index.html#attribution",
@@ -193,14 +193,14 @@
     "href": "day2/day2-2_dimensionality_reduction.html",
     "title": "Dimensionality reduction",
     "section": "",
-    "text": "Download the presentation \n\n Download the presentation from the video \n\nMaking sense of PCA\n\nUnderstanding t-SNE\n\n\nt-SNE explained by Josh Starmer\nUnderstanding UMAP\n\n\nVideo by one of the UMAP authors\nMore info on UMAP parameters"
+    "text": "Download the presentation \n\n\nMaking sense of PCA\n\nUnderstanding t-SNE\n\n\nt-SNE explained by Josh Starmer\nUnderstanding UMAP\n\n\nVideo by one of the UMAP authors\nMore info on UMAP parameters"
   },
   {
     "objectID": "day2/day2-2_dimensionality_reduction.html#material",
     "href": "day2/day2-2_dimensionality_reduction.html#material",
     "title": "Dimensionality reduction",
     "section": "",
-    "text": "Download the presentation \n\n Download the presentation from the video \n\nMaking sense of PCA\n\nUnderstanding t-SNE\n\n\nt-SNE explained by Josh Starmer\nUnderstanding UMAP\n\n\nVideo by one of the UMAP authors\nMore info on UMAP parameters"
+    "text": "Download the presentation \n\n\nMaking sense of PCA\n\nUnderstanding t-SNE\n\n\nt-SNE explained by Josh Starmer\nUnderstanding UMAP\n\n\nVideo by one of the UMAP authors\nMore info on UMAP parameters"
   },
   {
     "objectID": "day2/day2-2_dimensionality_reduction.html#exercises",
@@ -291,14 +291,21 @@
     "href": "course_schedule.html#day-2",
     "title": "Course schedule",
     "section": "Day 2",
-    "text": "Day 2\n\n\n\nblock\nstart\nend\nsubject\nlecturer\n\n\n\n\nblock 1\n9:15 AM\n10:30 AM\nNormalization and scaling\nLucie Pfeiferova\n\n\n\n10:30 AM\n11:00 AM\nBREAK\n\n\n\nblock 2\n11:00 AM\n12:30 PM\nDimensionality reduction and Integration\nLucie Pfeiferova and Yusuf Caglar Odabasi\n\n\n\n12:30 PM\n1:30 PM\nBREAK\n\n\n\nblock 3\n1:30 PM\n3:00 PM\nClustering\nYusuf Caglar Odabasi\n\n\n\n3:00 PM\n3:30 PM\nBREAK\n\n\n\nblock 4\n3:30 PM\n5:00 PM\ngroup work"
+    "text": "Day 2\n\n\n\nblock\nstart\nend\nsubject\nlecturer\n\n\n\n\nblock 1\n9:15 AM\n10:30 AM\nNormalization and scaling\nLucie Pfeiferova\n\n\n\n\n\nDimensionality reduction\nLucie Pfeiferova\n\n\n\n          | 10:30 AM | 11:00 AM | BREAK | |\nblock 2 | 11:00 AM | 12:30 PM | Integration | Vojtech Melichar |\n          | 12:30 PM | 1:30 PM | BREAK | |\nblock 3 | 1:30 PM | 3:00 PM | Clustering | Vojtech Melichar |\n          | 3:00 PM | 3:30 PM | BREAK | |\nblock 4 | 3:30 PM | 5:00 PM | group work | |"
   },
   {
     "objectID": "course_schedule.html#day-3",
     "href": "course_schedule.html#day-3",
     "title": "Course schedule",
     "section": "Day 3",
-    "text": "Day 3\n\n\n\nblock\nstart\nend\nsubject\nlecturer\n\n\n\n\nblock 1\n9:15 AM\n10:30 AM\nCell annotation\nLucie Pfeiferova\n\n\n\n10:30 AM\n11:00 AM\nBREAK\n\n\n\nblock 2\n11:00 AM\n12:30 PM\nDifferential gene expression and Enrichment analysis\nJan Kubovciak\n\n\n\n12:30 PM\n1:30 PM\nBREAK\n\n\n\nblock 3\n1:30 PM\n3:00 PM\ngroup work\n\n\n\n\n3:00 PM\n3:30 PM\nBREAK\n\n\n\nblock 4\n3:30 PM\n5:00 PM\ngroup work + presentations\n\n\n\npost-course\n5:00 PM\n5:10 PM\nPost-course information\nMichal Kolar"
+    "text": "Day 3\n\n\n\nblock\nstart\nend\nsubject\nlecturer\n\n\n\n\nblock 1\n9:15 AM\n10:30 AM\nCell annotation\nLucie Pfeiferova\n\n\n\n10:30 AM\n11:00 AM\nBREAK\n\n\n\nblock 2\n11:00 AM\n12:30 PM\nDifferential gene expression\nJan Kubovciak\n\n\n\n\n\nEnrichment analysis\nJan Kubovciak\n\n\n\n12:30 PM\n1:30 PM\nBREAK\n\n\n\nblock 3\n1:30 PM\n3:00 PM\ngroup work\n\n\n\n\n3:00 PM\n3:30 PM\nBREAK\n\n\n\nblock 4\n3:30 PM\n5:00 PM\ngroup work + presentations"
+  },
+  {
+    "objectID": "course_schedule.html#day-4",
+    "href": "course_schedule.html#day-4",
+    "title": "Course schedule",
+    "section": "Day 4",
+    "text": "Day 4\n\n\n\n\n\n\n\n\n\n\nblock\nstart\nend\nsubject\nlecturer\n\n\n\n\nblock 1\n9:15 AM\n10:30 AM\ngroup work + presentations\n\n\n\n\npost-course | 10:30 AM | 10:45 AM | Post-course information | all |"
   },
   {
     "objectID": "day1/day1-1a_cellranger.html",
@@ -347,7 +354,7 @@
     "href": "day2/day2-1_normalization_scaling.html#material-1",
     "title": "Normalization and scaling",
     "section": "Material",
-    "text": "Material\n\n Download the presentation from the video \n\nSeurat vignette"
+    "text": "Material\n\n\nSeurat vignette"
   },
   {
     "objectID": "day2/day2-1_normalization_scaling.html#exercises",
@@ -361,14 +368,14 @@
     "href": "day2/day2-3_integration.html",
     "title": "Integration",
     "section": "",
-    "text": "Download the presentation \n\n Download the presentation from the video"
+    "text": "Download the presentation"
   },
   {
     "objectID": "day2/day2-3_integration.html#material",
     "href": "day2/day2-3_integration.html#material",
     "title": "Integration",
     "section": "",
-    "text": "Download the presentation \n\n Download the presentation from the video"
+    "text": "Download the presentation"
   },
   {
     "objectID": "day2/day2-3_integration.html#exercises",
@@ -382,14 +389,14 @@
     "href": "day3/day3-1_cell_annotation.html",
     "title": "Cell annotation",
     "section": "",
-    "text": "Download the presentation \n\n Download the presentation from the video \n\nReview on automated cell annotation"
+    "text": "Download the presentation \n\n\nReview on automated cell annotation"
   },
   {
     "objectID": "day3/day3-1_cell_annotation.html#material",
     "href": "day3/day3-1_cell_annotation.html#material",
     "title": "Cell annotation",
     "section": "",
-    "text": "Download the presentation \n\n Download the presentation from the video \n\nReview on automated cell annotation"
+    "text": "Download the presentation \n\n\nReview on automated cell annotation"
   },
   {
     "objectID": "day3/day3-1_cell_annotation.html#exercises",
