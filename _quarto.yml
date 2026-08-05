@@ -51,7 +51,7 @@ website:
           - href: "projects/project3.qmd"
           - href: "projects/project4.qmd"
       - text: "Archive"
-	  - href: "archive.qmd"	
+      - href: "archive.qmd"	
 
       # - text: "Versions"
       #   menu:
