@@ -1,0 +1,10 @@
+---
+title: "Archive"
+---
+
+Looking for a previous version of this course? Older snapshots of the full
+website are preserved below, exactly as they were at the time of release.
+
+## Available versions
+
+- [v1.0.0-alpha](archive/v1.0.0-alpha/index.html) — released July 2026
