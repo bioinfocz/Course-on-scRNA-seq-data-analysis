@@ -29,6 +29,11 @@ jobs:
         run: |
           quarto render
 
+      - name: Restore archived versions
+        run: |
+          mkdir -p docs/archive
+          cp -R archived_sites/* docs/archive/ 2>/dev/null || true
+
       - name: Commit and push rendered site
         if: github.ref == 'refs/heads/master'
         run: |
