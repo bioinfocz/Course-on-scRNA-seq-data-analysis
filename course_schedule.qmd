@@ -10,8 +10,8 @@ title: "Course schedule"
 
 | block   	| start    	| end      	| subject                        	| lecturer                        |
 |---------	|----------	|----------	|--------------------------------	|--------------------------------	|
-| introduction 	| 9:15 AM  	| 9:30 AM 	| [Introduction](day1/day1-1_setup.qmd) | Michal Kolar| 
-| block 1 	| 9:30 AM  	| 10:30 AM 	| [Introduction scRNAseq](day1/day1-1_setup.qmd) | Michal Kolar |
+| introduction 	| 9:15 AM  	| 9:30 AM 	| [Introduction](day1/day1-1_setup.qmd) | all| 
+| block 1 	| 9:30 AM  	| 10:30 AM 	| [Introduction scRNAseq](day1/day1-1_setup.qmd) | Vojtech Melichar |
 |         	| 10:30 AM 	| 11:00 AM 	| BREAK                          	| |
 | block 2 	| 11:00 AM 	| 12:30 PM 	| [10X and Cellranger](day1/day1-1a_cellranger.qmd) 	     | Jan Kubovciak |
 |         	| 12:30 PM 	| 1:30 PM  	| BREAK                          	| |
@@ -25,7 +25,6 @@ title: "Course schedule"
 |---------	|----------	|----------	|-------------------------------------	|--------------------------------	|
 | block 1 	| 9:15 AM  	| 10:30 AM  	| [Normalization and scaling](day2/day2-1_normalization_scaling.qmd)  |  Lucie Pfeiferova |
 |  	|   	|   	| [Dimensionality reduction](day2/day2-2_dimensionality_reduction.qmd)  |  Lucie Pfeiferova |
-
 |         	| 10:30 AM 	| 11:00 AM 	| BREAK                               	| |
 | block 2 	| 11:00 AM 	| 12:30 PM 	| [Integration](day2/day2-3_integration.qmd)  | Vojtech Melichar  |
 |         	| 12:30 PM 	| 1:30 PM  	| BREAK                               	| |
@@ -47,9 +46,8 @@ title: "Course schedule"
 | block 4 	| 3:30 PM  	| 5:00 PM  	| group work 	+ presentations | |
 
 ## Day 4
+
 | block   	| start    	| end      	| subject                             	| lecturer                        |
 |---------	|----------	|----------	|-------------------------------------	|--------------------------------	|
 | block 1 	| 9:15 AM  	| 10:30 AM 	| group work + presentations 	|  |
-
 | post-course 	| 10:30 AM  	| 10:45 AM  	| [Post-course information](assets/pdf/11_post_course.pdf) 	| all |
-

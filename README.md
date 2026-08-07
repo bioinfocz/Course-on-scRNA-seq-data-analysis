@@ -1,4 +1,4 @@
-![build workflow](https://github.com/sib-swiss/single-cell-training/actions/workflows/docker-image.yml/badge.svg)
+![build workflow](https://github.com/bioinfocz/Course-on-scRNA-seq-data-analysis/actions/workflows/render-page.yml/badge.svg)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 This website is hosted at: https://bioinfocz.github.io/Course-on-scRNA-seq-data-analysis/
@@ -27,12 +27,11 @@ By the end of the course, participants will possess the following abilities:
 - Michal Kolar [ORCiD](https://orcid.org/0000-0002-4593-1525)
 - Lucie Pfeiferova [ORCiD](https://orcid.org/0000-0003-1089-0329)
 - Jan Kubovciak [ORCiD](https://orcid.org/0000-0001-6446-9797)
-- Yusuf Caglar Odabasi [ORCiD](https://orcid.org/0000-0003-0690-5575)
+- Vojtech Melichar [ORCiD](https://orcid.org/0009-0000-7278-923X)
 
 ## Course support team
-- Vojtech Melichar [ORCiD](https://orcid.org/0009-0000-7278-923X)
-- Mathys Delattre
-- Eva Rohlova
+
+
 
 ## Atributions
 We would like to thank Elixir for all the support and provided computational funds, also we would like to thank Metacentrum organization. This course is largely based on material from the SIB [sib-swiss.github.io/single-cell-r-training](https://sib-swiss.github.io/single-cell-r-training/), which we gratefully acknowledge. Parts of the original SIB Course were inspired by the [Broad Institute Single Cell Workshop](https://broadinstitute.github.io/2019_scWorkshop/index.html), the [CRUK CI Introduction to single-cell RNA-seq data analysis course](https://bioinformatics-core-shared-training.github.io/UnivCambridge_ScRnaSeq_Nov2021/) and courses previously developed by Walid Gharib at SIB. 
@@ -64,33 +63,36 @@ install.packages("renv")
 renv::restore()
 ```
 ### Render website
-Open the project in Rstudio, and run in the terminal to render the full website:
+For most content edits, you don't need to render locally at all: pushing a change to a `.qmd` or `.yml` file to `master` automatically triggers a GitHub Actions workflow that renders the site and publishes it. See the "Course Repo Maintenance Guide" for details.
+
+If you do want to render locally (e.g. to preview before pushing), open the project in Rstudio, and run in the terminal:
 
 ```sh
 quarto render
 ```
-Sites are rendered to docs folder. 
+Sites are rendered to the `docs` folder, which GitHub Pages serves directly (branch `master`, folder `/docs`).
 
 ### Run with Docker
-A Docker image with all the required software is available on Docker Hub.
-
-To run the Docker container, you can use the following command:
+A Docker image with all the required software is available on Docker Hub, under our own namespace:
 
 ```sh
 docker run \
 --rm \
 -p 8787:8787 \
 -v $PWD:/home/rstudio \
-sibswiss/training-singlecell-rstudio:latest
+pfeiferl/training-singlecell-rstudio:latest
 ```
 You can also use the script `Docker/run_locally.sh` to run the container.
 
-### Update Docker image
-To add or update R packages in the Docker image, you need to:
+> Note: this image is a fork/derivative of SIB's own `sibswiss/training-singlecell-rstudio` image, rebuilt under our own namespace so that our changes never affect SIB's shared, actively-used image. Do not push to the `sibswiss` namespace.
 
-1. Add the new packages to the `Docker/install_packages.R` script.
-2. Copy the `renv.lock` file from the root directory to the `Docker` directory.
-3. Rebuild the Docker image.
+### Update Docker image
+As of the current `Docker/Dockerfile`, packages are installed via `renv::restore()` (using `Docker/renv.lock`) plus any explicit `RUN Rscript -e 'install.packages("...")'` lines added directly to the Dockerfile. **`Docker/install_packages.R` is currently not invoked by the build** — editing it alone has no effect on the built image. (Properly folding new packages into `renv.lock` via `renv::snapshot()`, so `install_packages.R` is meaningful again, is a pending improvement — see the maintenance guide.)
+
+To add or update a package in the Docker image today:
+
+1. Add a line to `Docker/Dockerfile`, e.g. `RUN Rscript -e 'install.packages("pkgname")'` (specify a `repos=` argument if the package isn't on CRAN).
+2. Rebuild the Docker image (see below).
 
 #### Using GitHub Actions
 You can manually trigger a build of the Docker image by going to the Actions tab of this repository, selecting the "Manual build and push" workflow, and clicking "Run workflow".
@@ -99,7 +101,7 @@ You can manually trigger a build of the Docker image by going to the Actions tab
 Alternatively, you can rebuild the image locally:
 
 ```sh
-cp renv.lock Docker/
 cd Docker
-docker build -t sibswiss/training-singlecell-rstudio:latest .
+docker build -t pfeiferl/training-singlecell-rstudio:latest .
+docker push pfeiferl/training-singlecell-rstudio:latest
 ```
