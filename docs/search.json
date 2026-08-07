@@ -284,14 +284,14 @@
     "href": "course_schedule.html#day-1",
     "title": "Course schedule",
     "section": "Day 1",
-    "text": "Day 1\n\n\n\nblock\nstart\nend\nsubject\nlecturer\n\n\n\n\nintroduction\n9:15 AM\n9:30 AM\nIntroduction\nMichal Kolar\n\n\nblock 1\n9:30 AM\n10:30 AM\nIntroduction scRNAseq\nMichal Kolar\n\n\n\n10:30 AM\n11:00 AM\nBREAK\n\n\n\nblock 2\n11:00 AM\n12:30 PM\n10X and Cellranger\nJan Kubovciak\n\n\n\n12:30 PM\n1:30 PM\nBREAK\n\n\n\nblock 3\n1:30 PM\n3:00 PM\nAnalysis tools and QC\nJan Kubovciak\n\n\n\n3:00 PM\n3:30 PM\nBREAK\n\n\n\nblock 4\n3:30 PM\n5:00 PM\nGroup work"
+    "text": "Day 1\n\n\n\nblock\nstart\nend\nsubject\nlecturer\n\n\n\n\nintroduction\n9:15 AM\n9:30 AM\nIntroduction\nall\n\n\nblock 1\n9:30 AM\n10:30 AM\nIntroduction scRNAseq\nVojtech Melichar\n\n\n\n10:30 AM\n11:00 AM\nBREAK\n\n\n\nblock 2\n11:00 AM\n12:30 PM\n10X and Cellranger\nJan Kubovciak\n\n\n\n12:30 PM\n1:30 PM\nBREAK\n\n\n\nblock 3\n1:30 PM\n3:00 PM\nAnalysis tools and QC\nJan Kubovciak\n\n\n\n3:00 PM\n3:30 PM\nBREAK\n\n\n\nblock 4\n3:30 PM\n5:00 PM\nGroup work"
   },
   {
     "objectID": "course_schedule.html#day-2",
     "href": "course_schedule.html#day-2",
     "title": "Course schedule",
     "section": "Day 2",
-    "text": "Day 2\n\n\n\nblock\nstart\nend\nsubject\nlecturer\n\n\n\n\nblock 1\n9:15 AM\n10:30 AM\nNormalization and scaling\nLucie Pfeiferova\n\n\n\n\n\nDimensionality reduction\nLucie Pfeiferova\n\n\n\n          | 10:30 AM | 11:00 AM | BREAK | |\nblock 2 | 11:00 AM | 12:30 PM | Integration | Vojtech Melichar |\n          | 12:30 PM | 1:30 PM | BREAK | |\nblock 3 | 1:30 PM | 3:00 PM | Clustering | Vojtech Melichar |\n          | 3:00 PM | 3:30 PM | BREAK | |\nblock 4 | 3:30 PM | 5:00 PM | group work | |"
+    "text": "Day 2\n\n\n\nblock\nstart\nend\nsubject\nlecturer\n\n\n\n\nblock 1\n9:15 AM\n10:30 AM\nNormalization and scaling\nLucie Pfeiferova\n\n\n\n\n\nDimensionality reduction\nLucie Pfeiferova\n\n\n\n10:30 AM\n11:00 AM\nBREAK\n\n\n\nblock 2\n11:00 AM\n12:30 PM\nIntegration\nVojtech Melichar\n\n\n\n12:30 PM\n1:30 PM\nBREAK\n\n\n\nblock 3\n1:30 PM\n3:00 PM\nClustering\nVojtech Melichar\n\n\n\n3:00 PM\n3:30 PM\nBREAK\n\n\n\nblock 4\n3:30 PM\n5:00 PM\ngroup work"
   },
   {
     "objectID": "course_schedule.html#day-3",
@@ -305,7 +305,7 @@
     "href": "course_schedule.html#day-4",
     "title": "Course schedule",
     "section": "Day 4",
-    "text": "Day 4\n\n\n\n\n\n\n\n\n\n\nblock\nstart\nend\nsubject\nlecturer\n\n\n\n\nblock 1\n9:15 AM\n10:30 AM\ngroup work + presentations\n\n\n\n\npost-course | 10:30 AM | 10:45 AM | Post-course information | all |"
+    "text": "Day 4\n\n\n\nblock\nstart\nend\nsubject\nlecturer\n\n\n\n\nblock 1\n9:15 AM\n10:30 AM\ngroup work + presentations\n\n\n\npost-course\n10:30 AM\n10:45 AM\nPost-course information\nall"
   },
   {
     "objectID": "day1/day1-1a_cellranger.html",
