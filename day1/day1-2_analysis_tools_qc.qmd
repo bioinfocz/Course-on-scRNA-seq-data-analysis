@@ -4,6 +4,8 @@ project:
   execute-dir: project
 editor_options: 
   chunk_output_type: console
+execute: 
+  freeze: false 
 ---
 
 ::: {.callout-note}
