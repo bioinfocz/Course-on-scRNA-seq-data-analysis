@@ -2,6 +2,8 @@
 title: "Cell annotation"
 editor_options: 
   chunk_output_type: console
+execute: 
+  freeze: false
 ---
 
 ## Material
