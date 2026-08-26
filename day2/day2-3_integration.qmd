@@ -11,7 +11,7 @@ editor_options:
 
 {{< video https://youtu.be/2TsW5A53hTg?si=Bas__YskLl21-YjF >}}
 
-{{< downloadthis ../assets/pdf/scRNAseq_RM_Integration_dimreduction.pdf dname="scRNAseq_RM_Integration_dimreduction" label="Download the presentation from the video" icon="filetype-pdf" >}}
+
 
 ## Exercises
 
