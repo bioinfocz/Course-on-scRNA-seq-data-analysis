@@ -150,7 +150,7 @@ Instead of testing for Gene Ontology terms, we can also test for other gene set 
 
 ```{r}
 library(msigdbr)
-library(msigdbrdata)
+#library(msigdbrdata)
 gmt <- msigdbr::msigdbr(species = "human", category = "H")
 ```
 

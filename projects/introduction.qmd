@@ -9,10 +9,10 @@ Project based learning is about learning by doing, but also about *peer instruct
 
 Each project has hints and guiding questions. However, if interesting questions pop up during the project, you are **encouraged** to work on those. Also, you don't have to perform all the tasks and answer all the questions.
 
-You will get to know each other, define how you like to collaborate and start on the project. On day 2 and 3 you can work on the project, and apply the skills and knowlege you have learned during these days. We will conclude the projects on day 3 with a **10-minute presentation** of each group.
+You will get to know each other, define how you like to collaborate and start on the project. On day 1, 2 and 3 you can work on the project, and apply the skills and knowlege you have learned during these days. We will conclude the projects on day 4 with a **10-minute presentation** of each group.
 
 ## Working directories
 
-Each group has access to a shared working directory, which is mounted at the root level as `/group_work/groupX` (replace `X` with your group number). 
+Each group has access to a shared working directory, which is mounted at the root level as `/gpfs/helios/projects/elixir_scRNA-seq/Projects/Project_X` (replace `X` with your project number). 
 
-In RStudio Server, you can view the contents of your group's directory in the Files pane (bottom left). Click on the three dots (`...`) to navigate to `/group_work/groupX` and access or manage your project files.
+In RStudio Server, you can view the contents of your group's directory in the Files pane (bottom left). Click on the three dots (`...`) to navigate to `/gpfs/helios/projects/elixir_scRNA-seq/Projects/Project_X` and access or manage your project files.

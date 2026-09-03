@@ -15,12 +15,10 @@ Project 1 is about a single cell sequencing project of zebrafish retina. Photore
 
 Data has been downloaded and prepared for you from [GEO GSE202212](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE202212). The count matrices are created with `cellranger`. To create the count tables, the EGFP sequence was added to the reference genome. The gene name of EGFP is `EGFP`. 
 
-In order to download the data, run:
+In order to retrieve the data, run:
 
-```{bash}
-wget https://single-cell-transcriptomics.s3.eu-central-1.amazonaws.com/projects/data/project1.tar.gz
-tar -xvf project1.tar.gz
-rm project1.tar.gz 
+```{r}
+system('cp -v /gpfs/helios/projects/elixir_scRNA-seq/input_data/projects_data/project1.zip . && unzip ./project1.zip')
 ```
 
 
@@ -90,7 +88,7 @@ Showing us that we have two replicates per treatment, and four treatments:
 - 7dp: 7 days post injury
 - 10dp: 10 days post injury
 
-Now create a new project in the `project1` directory (Project (None) > New Project ...), and create Seurat object from the count matrices:
+Now create Seurat object from the count matrices. Optionally, create a new project in the `project1` directory (Project (None) > New Project ...):
 
 ```{r}
 library(Seurat)

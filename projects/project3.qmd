@@ -18,12 +18,10 @@ Further analysis identified epigenetically imprinted IFN-I response states that 
 
 Data has been downloaded and prepared for you from [GEO GSE199994](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE199994).
 
-In order to download the data, run:
+In order to retrieve the data, run:
 
-```{bash}
-wget https://single-cell-transcriptomics.s3.eu-central-1.amazonaws.com/projects/data/project3.tar.gz
-
-tar -xzvf project3.tar.gz
+```{r}
+system('cp -v /gpfs/helios/projects/elixir_scRNA-seq/input_data/projects_data/project3.zip . && unzip ./project3.zip')
 ```
 
 After extracting, a directory `GSE199994` appears with the following format:
@@ -76,7 +74,7 @@ GSE199994/
 
 Showing us that we have two healthy donors (HD) and eight treated patients (P).
 
-Now create a new project in the `project3` directory (Project (None) \> New Project ...), and create a combined Seurat object from all the count matrices:
+Now create Seurat object from the count matrices. Optionally, create a new project in the `project3` directory (Project (None) > New Project ...):
 
 ```{r}
 #| eval: false

@@ -102,57 +102,67 @@ Finally, type in the project name. This should be `single_cell_course`. Finish b
 
 Now we have setup a project and a project directory (it is in `/home/rstudio/single_cell_course`).
 
-### The course data
+### The course data and environment
 
-The course data are provided in the RStudio home directory.
+First, source (run) provided `set_libpaths.R` script to point R session to specific location of R packages (libraries). This command has to be run each time an R session is created. Second command copies input data from shared location to current working directory. Data are retained over session restarts. These commands apply only to specific Open OnDemand environment.
+
+```{r}
+#| output: false
+#| message: false
+#| warning: false
+
+source('/gpfs/helios/projects/elixir_scRNA-seq/set_libpaths.R')
+
+system('cp -rv /gpfs/helios/projects/elixir_scRNA-seq/input_data/course_data/ .')
+```
 
 Have a look at the `course_data` directory. It should contain the following:
 
 ```
-course_data
+course_data/
 ├── count_matrices
-│   ├── ETV6-RUNX1_1
-│   │   └── outs
-│   │       └── filtered_feature_bc_matrix
-│   │           ├── barcodes.tsv.gz
-│   │           ├── features.tsv.gz
-│   │           └── matrix.mtx.gz
-│   ├── ETV6-RUNX1_2
-│   │   └── outs
-│   │       └── filtered_feature_bc_matrix
-│   │           ├── barcodes.tsv.gz
-│   │           ├── features.tsv.gz
-│   │           └── matrix.mtx.gz
-│   ├── ETV6-RUNX1_3
-│   │   └── outs
-│   │       └── filtered_feature_bc_matrix
-│   │           ├── barcodes.tsv.gz
-│   │           ├── features.tsv.gz
-│   │           └── matrix.mtx.gz
-│   ├── PBMMC_1
-│   │   └── outs
-│   │       └── filtered_feature_bc_matrix
-│   │           ├── barcodes.tsv.gz
-│   │           ├── features.tsv.gz
-│   │           └── matrix.mtx.gz
-│   ├── PBMMC_2
-│   │   └── outs
-│   │       └── filtered_feature_bc_matrix
-│   │           ├── barcodes.tsv.gz
-│   │           ├── features.tsv.gz
-│   │           └── matrix.mtx.gz
-│   └── PBMMC_3
-│       └── outs
-│           └── filtered_feature_bc_matrix
-│               ├── barcodes.tsv.gz
-│               ├── features.tsv.gz
-│               └── matrix.mtx.gz
-└── reads
-    ├── ETV6-RUNX1_1_S1_L001_I1_001.fastq.gz
-    ├── ETV6-RUNX1_1_S1_L001_R1_001.fastq.gz
-    └── ETV6-RUNX1_1_S1_L001_R2_001.fastq.gz
+│   ├── ETV6-RUNX1_1
+│   │   └── outs
+│   │       ├── filtered_feature_bc_matrix
+│   │       │   ├── barcodes.tsv.gz
+│   │       │   ├── features.tsv.gz
+│   │       │   └── matrix.mtx.gz
+│   │       └── web_summary.html
+│   ├── ETV6-RUNX1_2
+│   │   └── outs
+│   │       └── filtered_feature_bc_matrix
+│   │           ├── barcodes.tsv.gz
+│   │           ├── features.tsv.gz
+│   │           └── matrix.mtx.gz
+│   ├── ETV6-RUNX1_3
+│   │   └── outs
+│   │       └── filtered_feature_bc_matrix
+│   │           ├── barcodes.tsv.gz
+│   │           ├── features.tsv.gz
+│   │           └── matrix.mtx.gz
+│   ├── PBMMC_1
+│   │   └── outs
+│   │       └── filtered_feature_bc_matrix
+│   │           ├── barcodes.tsv.gz
+│   │           ├── features.tsv.gz
+│   │           └── matrix.mtx.gz
+│   ├── PBMMC_2
+│   │   └── outs
+│   │       └── filtered_feature_bc_matrix
+│   │           ├── barcodes.tsv.gz
+│   │           ├── features.tsv.gz
+│   │           └── matrix.mtx.gz
+│   └── PBMMC_3
+│       └── outs
+│           └── filtered_feature_bc_matrix
+│               ├── barcodes.tsv.gz
+│               ├── features.tsv.gz
+│               └── matrix.mtx.gz
+├── proB.rds
+└── sample_info_course.csv
 
 20 directories, 21 files
+
 ```
 
 This data comes from:
