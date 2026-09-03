@@ -107,9 +107,7 @@ Now we have setup a project and a project directory (it is in `/home/rstudio/sin
 First, source (run) provided `set_libpaths.R` script to point R session to specific location of R packages (libraries). This command has to be run each time an R session is created. Second command copies input data from shared location to current working directory. Data are retained over session restarts. These commands apply only to specific Open OnDemand environment.
 
 ```{r}
-#| output: false
-#| message: false
-#| warning: false
+#| eval: false
 
 source('/gpfs/helios/projects/elixir_scRNA-seq/set_libpaths.R')
 

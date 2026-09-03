@@ -18,6 +18,7 @@ Data has been downloaded and prepared for you from [GEO GSE202212](https://www.n
 In order to retrieve the data, run:
 
 ```{r}
+#| eval: false
 system('cp -v /gpfs/helios/projects/elixir_scRNA-seq/input_data/projects_data/project1.zip . && unzip ./project1.zip')
 ```
 
@@ -91,6 +92,7 @@ Showing us that we have two replicates per treatment, and four treatments:
 Now create Seurat object from the count matrices. Optionally, create a new project in the `project1` directory (Project (None) > New Project ...):
 
 ```{r}
+#| eval: false
 library(Seurat)
 
 # vector of paths to all sample directories
