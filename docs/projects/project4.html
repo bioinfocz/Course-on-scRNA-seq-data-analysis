@@ -137,7 +137,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../day1/day1-1a_cellranger.html">
- <span class="dropdown-text">Introduction &amp; cellranger</span></a>
+ <span class="dropdown-text">Introduction &amp; cellranger (advanced)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../day1/day1-2_analysis_tools_qc.html">
@@ -313,10 +313,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>ADC_6</li>
 </ul>
 <p>Data has been downloaded and prepared for you from <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE208653">GEO GSE208653</a>.</p>
-<p>In order to download the data, run:</p>
+<p>In order to retrieve the data, run:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://single-cell-transcriptomics.s3.eu-central-1.amazonaws.com/projects/data/project4.tar.gz</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-xzvf</span> project4.tar.gz</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/system.html">system</a></span><span class="op">(</span><span class="st">'cp -v /gpfs/helios/projects/elixir_scRNA-seq/input_data/projects_data/project4.zip . &amp;&amp; unzip ./project4.zip'</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>After extracting, a directory <code>project4</code> appears with the following content:</p>
 <pre><code>.
@@ -361,7 +360,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 └── paper2.pdf
 
 10 directories, 29 files</code></pre>
-<p>Now create a new project in the <code>project1</code> directory (Project (None) &gt; New Project …), and create Seurat object from the count matrices:</p>
+<p>Now create Seurat object from the count matrices. Optionally, create a new project in the <code>project4</code> directory (Project (None) &gt; New Project …):</p>
 <div class="cell">
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://satijalab.org/seurat">Seurat</a></span><span class="op">)</span></span>
 <span><span class="co"># vector of paths to all sample directories</span></span>

@@ -137,7 +137,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../day1/day1-1a_cellranger.html">
- <span class="dropdown-text">Introduction &amp; cellranger</span></a>
+ <span class="dropdown-text">Introduction &amp; cellranger (advanced)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../day1/day1-2_analysis_tools_qc.html">
@@ -293,11 +293,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Further analysis identified epigenetically imprinted IFN-I response states that predefine immune reactivity to therapy. Coexpression and network analyses demonstrated that IFN-I responsiveness influences functional T cell programs and systemic immune coordination. This study provides insights into how pre-existing immune states impact therapeutic success and highlights transcriptional markers that could be used to predict patient outcomes in PD1 blockade immunotherapy.</p>
 <section id="available-data" class="level2"><h2 class="anchored" data-anchor-id="available-data">Available data</h2>
 <p>Data has been downloaded and prepared for you from <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE199994">GEO GSE199994</a>.</p>
-<p>In order to download the data, run:</p>
+<p>In order to retrieve the data, run:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://single-cell-transcriptomics.s3.eu-central-1.amazonaws.com/projects/data/project3.tar.gz</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-xzvf</span> project3.tar.gz</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/system.html">system</a></span><span class="op">(</span><span class="st">'cp -v /gpfs/helios/projects/elixir_scRNA-seq/input_data/projects_data/project3.zip . &amp;&amp; unzip ./project3.zip'</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>After extracting, a directory <code>GSE199994</code> appears with the following format:</p>
 <pre><code>GSE199994/
@@ -344,7 +342,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 &nbsp; &nbsp; &nbsp; &nbsp;└── matrix.mtx.gz
 └── paper.pdf</code></pre>
 <p>Showing us that we have two healthy donors (HD) and eight treated patients (P).</p>
-<p>Now create a new project in the <code>project3</code> directory (Project (None) &gt; New Project …), and create a combined Seurat object from all the count matrices:</p>
+<p>Now create Seurat object from the count matrices. Optionally, create a new project in the <code>project3</code> directory (Project (None) &gt; New Project …):</p>
 <div class="cell">
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://satijalab.org/seurat">Seurat</a></span><span class="op">)</span></span>
 <span></span>
