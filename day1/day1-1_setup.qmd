@@ -56,7 +56,7 @@ docker run \
 -p 8787:8787 \
 -e PASSWORD=test \
 -v $PWD:/home/rstudio \
-sibswiss/training-singlecell-rstudio:2025.7
+pfeiferl/training-singlecell-rstudio:latest
 ```
 
 If this command has run successfully, approach Rstudio server like this:
@@ -76,31 +76,12 @@ Great! Now you will be able to use Rstudio with all required installations.
 ## About the options
 The option `-v` mounts a local directory in your computer to the directory `/home/rstudio` in the docker container ('rstudio' is the default user for Rstudio containers). In that way, you have files available both in the container and on your computer. Use this directory on your computer. Change the first path to a path on your computer that you want to use as a working directory.
 
-The part `sibswiss/training-singlecell-rstudio:2025.7` is the image we are going to load into the container. The image contains all the information about software and dependencies needed for this course. When you run this command for the first time it will download the image. Once it's on your computer, it will start immediately.
+The part `pfeiferl/training-singlecell-rstudio:latest` is the image we are going to load into the container. The image contains all the information about software and dependencies needed for this course. When you run this command for the first time it will download the image. Once it's on your computer, it will start immediately.
 :::
 
 
 :::
 
-### Create a project (optional)
-
-Now that you have access to an environment with the required installations, we can set up a project in a new directory. On the top right choose the button **Project (None)** and select **New Project...**
-
-![](../assets/images/create_new_project.png){width=200}
-
-Continue by choosing **New Directory**
-
-![](../assets/images/choose_new_directory.png){width=300}
-
-As project type select **New Project**
-
-![](../assets/images/choose_new_project.png){width=300}
-
-Finally, type in the project name. This should be `single_cell_course`. Finish by clicking **Create Project**.
-
-![](../assets/images/define_directory_name.png){width=300}
-
-Now we have setup a project and a project directory (it is in `/home/rstudio/single_cell_course`).
 
 ### The course data and environment
 
@@ -115,7 +96,7 @@ system('cp -rv /gpfs/helios/projects/elixir_scRNA-seq/input_data/course_data/ .'
 ```
 
 Have a look at the `course_data` directory. It should contain the following:
-
+Mind you, in some cases the course_data directory might contain fastq reads too. 
 ```
 course_data/
 ├── count_matrices
